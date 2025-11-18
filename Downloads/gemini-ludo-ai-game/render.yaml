@@ -2,7 +2,7 @@ services:
   - type: web
     name: gemini-ludo-game
     env: node
-    region: oregon
+    region: frankfurt
     plan: free
     buildCommand: npm install && npm run build && cd server && npm install
     startCommand: cd server && npm start
@@ -20,4 +20,5 @@ services:
         sync: false
       - key: GEMINI_API_KEY
         sync: false
+
 
