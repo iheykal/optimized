@@ -1,0 +1,10 @@
+/* Button styles are in index.css */
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn:disabled:hover {
+    transform: none;
+    box-shadow: var(--shadow-md);
+}

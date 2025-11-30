@@ -1,0 +1,118 @@
+.analytics {
+    animation: fadeIn var(--transition-base) ease-out;
+}
+
+.analytics-header {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.analytics-header h1 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.analytics-grid .card {
+    padding: var(--spacing-xl) !important;
+}
+
+.analytics-grid .card h3 {
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.125rem;
+}
+
+.analytics-grid .full-width {
+    grid-column: 1 / -1;
+}
+
+.mistakes-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.mistake-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.mistake-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(239, 68, 68, 0.2);
+    transition: width var(--transition-base);
+}
+
+.mistake-name {
+    position: relative;
+    z-index: 1;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+}
+
+.mistake-count {
+    position: relative;
+    z-index: 1;
+    color: var(--text-primary);
+    font-weight: 600;
+    background: var(--bg-tertiary);
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+}
+
+.key-metrics {
+    margin-top: var(--spacing-2xl);
+}
+
+.key-metrics h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.metric-card {
+    text-align: center;
+    padding: var(--spacing-xl) !important;
+}
+
+.metric-label {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metric-value {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .metric-value {
+        font-size: 1.5rem;
+    }
+}
