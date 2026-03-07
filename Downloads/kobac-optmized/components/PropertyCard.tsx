@@ -20,22 +20,13 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
                 onClick={onClick}
             >
                 <div className="relative w-48 flex-shrink-0">
-                    <Image
-                        src={property.images[0]}
-                        alt={property.title}
-                        fill
-                        className="object-cover"
-                        loading="lazy"
-                        sizes="192px"
-                        unoptimized
-                    />
+                    <Image src={property.images[0]} alt={property.title} fill className="object-cover" loading="lazy" sizes="192px" unoptimized />
                 </div>
                 <div className="p-4 flex flex-col justify-between flex-1">
                     <div>
                         <h3 className="font-bold text-gray-900 text-base mb-1">{property.title}</h3>
                         <div className="flex items-center gap-1 text-green-600 text-sm mb-0.5">
-                            <MapPin className="w-3.5 h-3.5" />
-                            <span>{property.district}</span>
+                            <MapPin className="w-3.5 h-3.5" /><span>{property.district}</span>
                         </div>
                         <p className="text-gray-400 text-xs uppercase tracking-wide">{property.landmark}</p>
                     </div>
@@ -47,13 +38,13 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
                         <div className="flex items-center gap-4 text-xs">
                             <div className="flex flex-col items-center gap-0.5">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/icons/bed.webp" alt="Bed" width={18} height={18} style={{ width: 18, height: 18, objectFit: 'contain' }} />
+                                <img src="/icons/bed.webp" alt="Bed" style={{ width: 18, height: 18, objectFit: 'contain' }} />
                                 <span className="font-semibold text-gray-900">{property.bedrooms > 0 ? property.bedrooms : '—'}</span>
                                 <span className="text-blue-600">QOL</span>
                             </div>
                             <div className="flex flex-col items-center gap-0.5">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/icons/shower.webp" alt="Shower" width={18} height={18} style={{ width: 18, height: 18, objectFit: 'contain' }} />
+                                <img src="/icons/shower.webp" alt="Shower" style={{ width: 18, height: 18, objectFit: 'contain' }} />
                                 <span className="font-semibold text-gray-900">{property.bathrooms > 0 ? property.bathrooms : '—'}</span>
                                 <span className="text-blue-600">Suuli</span>
                             </div>
@@ -64,13 +55,14 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
         )
     }
 
+    // Grid card
     return (
         <div
             className="property-card card-appear bg-white rounded-2xl shadow-sm border border-gray-100 cursor-pointer overflow-hidden"
             style={{ animationDelay: `${index * 60}ms` }}
             onClick={onClick}
         >
-            {/* Image — no ID badge */}
+            {/* Property image — no ID badge */}
             <div className="relative h-32 sm:h-48 bg-gray-100">
                 {property.images[0]?.match(/\.(mp4|mov|webm)$/i) ? (
                     <video
@@ -95,7 +87,7 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
                 )}
             </div>
 
-            {/* Body */}
+            {/* Card body — tighter on mobile for 2-col layout */}
             <div className="p-2.5 sm:p-4">
                 <h3 className="font-bold text-gray-900 text-sm sm:text-lg mb-0.5 sm:mb-1 leading-snug line-clamp-1">{property.title}</h3>
 
@@ -111,7 +103,7 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
                     <span className="text-gray-400 text-xs sm:text-sm">/{property.priceUnit}</span>
                 </p>
 
-                {/* Stats with real image icons — always shown */}
+                {/* Bed / Bathroom stats — always shown, even when 0 */}
                 <div className="flex items-center gap-3 sm:gap-6 mb-2 sm:mb-3">
                     <div className="flex flex-col items-center gap-0.5">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -129,9 +121,9 @@ export default function PropertyCard({ property, viewMode, onClick, index = 0 }:
 
                 {/* Agent */}
                 <div className="border-t border-gray-100 pt-2 sm:pt-3 mt-1 flex items-center gap-2">
-                    <div className="w-7 h-7 rounded-full overflow-hidden flex-shrink-0 border border-gray-100 shadow-sm">
+                    <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full overflow-hidden flex-shrink-0 border border-gray-100">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src="/icons/klogo.png" alt="Agent" style={{ width: 28, height: 28, objectFit: 'cover' }} />
+                        <img src="/icons/klogo.png" alt="Agent" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </div>
                     <div className="min-w-0">
                         <p className="text-xs sm:text-sm font-medium text-gray-800 leading-none truncate">{property.agent.name}</p>

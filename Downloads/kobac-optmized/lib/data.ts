@@ -10,7 +10,7 @@ const kobacAgent: Agent = {
 
 export const properties: Property[] = [
     {
-        id: 201, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
+        id: '201', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
         landmark: 'Suuqa sayidka', price: 140, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 1, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac201a/800/600', 'https://picsum.photos/seed/kobac201b/800/600', 'https://picsum.photos/seed/kobac201c/800/600'],
@@ -19,16 +19,16 @@ export const properties: Property[] = [
         listedAt: '2026-03-02T00:00:00Z',
     },
     {
-        id: 200, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
+        id: '200', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
         landmark: 'KPP', price: 300, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 2, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac200a/800/600', 'https://picsum.photos/seed/kobac200b/800/600'],
         agent: kobacAgent,
-        description: 'Apartment 2 qol ah oo ku yaalla Hodan. Kirada bishii waa $300. Nagala soo xariir si aad u hesho faahfaahin dheeraad ah.',
+        description: 'Apartment 2 qol ah oo ku yaalla Hodan. Kirada bishii waa $300.',
         listedAt: '2026-03-01T00:00:00Z',
     },
     {
-        id: 199, title: 'Villa Kiro ah', type: 'Villa', district: 'Wardhiigleey',
+        id: '199', title: 'Villa Kiro ah', type: 'Villa', district: 'Wardhiigleey',
         landmark: '15ka may', price: 350, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 3, bathrooms: 2,
         images: ['https://picsum.photos/seed/kobac199a/800/600', 'https://picsum.photos/seed/kobac199b/800/600', 'https://picsum.photos/seed/kobac199c/800/600', 'https://picsum.photos/seed/kobac199d/800/600'],
@@ -37,7 +37,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-28T00:00:00Z',
     },
     {
-        id: 198, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
+        id: '198', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
         landmark: 'KPP', price: 650, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 5, bathrooms: 3,
         images: ['https://picsum.photos/seed/kobac198a/800/600', 'https://picsum.photos/seed/kobac198b/800/600'],
@@ -46,7 +46,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-27T00:00:00Z',
     },
     {
-        id: 197, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
+        id: '197', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
         landmark: 'Interlooga', price: 310, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 3, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac197a/800/600', 'https://picsum.photos/seed/kobac197b/800/600'],
@@ -55,7 +55,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-26T00:00:00Z',
     },
     {
-        id: 196, title: 'Villa Kiro ah', type: 'Villa', district: 'Wardhiigleey',
+        id: '196', title: 'Villa Kiro ah', type: 'Villa', district: 'Wardhiigleey',
         landmark: 'HOSPITAL JAZIIRO', price: 450, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 5, bathrooms: 3,
         images: ['https://picsum.photos/seed/kobac196a/800/600', 'https://picsum.photos/seed/kobac196b/800/600', 'https://picsum.photos/seed/kobac196c/800/600'],
@@ -64,7 +64,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-25T00:00:00Z',
     },
     {
-        id: 195, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
+        id: '195', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Howl-Wadag',
         landmark: 'DHABARKA DAMBO HOTEL WEHLIYE', price: 400, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 2, bathrooms: 2,
         images: ['https://picsum.photos/seed/kobac195a/800/600', 'https://picsum.photos/seed/kobac195b/800/600'],
@@ -73,7 +73,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-24T00:00:00Z',
     },
     {
-        id: 194, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
+        id: '194', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
         landmark: 'KPP', price: 450, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 3, bathrooms: 2,
         images: ['https://picsum.photos/seed/kobac194a/800/600', 'https://picsum.photos/seed/kobac194b/800/600'],
@@ -82,7 +82,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-23T00:00:00Z',
     },
     {
-        id: 193, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
+        id: '193', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Hodan',
         landmark: 'ALBARAKO', price: 450, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 4, bathrooms: 2,
         images: ['https://picsum.photos/seed/kobac193a/800/600', 'https://picsum.photos/seed/kobac193b/800/600'],
@@ -91,7 +91,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-22T00:00:00Z',
     },
     {
-        id: 192, title: 'Office Kiro ah', type: 'Office', district: 'Hodan',
+        id: '192', title: 'Office Kiro ah', type: 'Office', district: 'Hodan',
         landmark: 'Maka Al-Mukarama', price: 800, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 0, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac192a/800/600', 'https://picsum.photos/seed/kobac192b/800/600'],
@@ -100,7 +100,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-21T00:00:00Z',
     },
     {
-        id: 191, title: 'Villa Kiro ah', type: 'Villa', district: 'Boondheere',
+        id: '191', title: 'Villa Kiro ah', type: 'Villa', district: 'Boondheere',
         landmark: 'Suuqa Bakaaraha', price: 600, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 4, bathrooms: 3,
         images: ['https://picsum.photos/seed/kobac191a/800/600', 'https://picsum.photos/seed/kobac191b/800/600', 'https://picsum.photos/seed/kobac191c/800/600'],
@@ -109,7 +109,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-20T00:00:00Z',
     },
     {
-        id: 190, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Wadajir',
+        id: '190', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Wadajir',
         landmark: 'Yaqshid', price: 250, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 2, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac190a/800/600', 'https://picsum.photos/seed/kobac190b/800/600'],
@@ -118,7 +118,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-19T00:00:00Z',
     },
     {
-        id: 189, title: 'Villa Kiro ah', type: 'Villa', district: 'Heliwa',
+        id: '189', title: 'Villa Kiro ah', type: 'Villa', district: 'Heliwa',
         landmark: 'Ceel Gaab', price: 500, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 5, bathrooms: 3,
         images: ['https://picsum.photos/seed/kobac189a/800/600', 'https://picsum.photos/seed/kobac189b/800/600'],
@@ -127,7 +127,7 @@ export const properties: Property[] = [
         listedAt: '2026-02-18T00:00:00Z',
     },
     {
-        id: 188, title: 'Shop Kiro ah', type: 'Shop', district: 'Hodan',
+        id: '188', title: 'Shop Kiro ah', type: 'Shop', district: 'Hodan',
         landmark: 'KPP', price: 350, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 0, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac188a/800/600'],
@@ -136,12 +136,12 @@ export const properties: Property[] = [
         listedAt: '2026-02-17T00:00:00Z',
     },
     {
-        id: 187, title: 'Apartment Kiro ah', type: 'Apartment', district: 'Wardhiigleey',
+        id: '187', title: 'Apartment Kiro ah', type: 'Apartment', district: 'Wardhiigleey',
         landmark: 'Bondere', price: 280, priceUnit: 'Bishii', listingType: 'rent',
         bedrooms: 2, bathrooms: 1,
         images: ['https://picsum.photos/seed/kobac187a/800/600', 'https://picsum.photos/seed/kobac187b/800/600'],
         agent: kobacAgent,
-        description: 'Apartment 2 qol ah oo yaalla Bondere, Wardhiigleey. Kirada bishii $280.',
+        description: 'Apartment 2 qol ah oo ku yaalla Bondere, Wardhiigleey. Kirada bishii $280.',
         listedAt: '2026-02-16T00:00:00Z',
     },
 ];
